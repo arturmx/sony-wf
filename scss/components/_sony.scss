@@ -1,0 +1,81 @@
+.sony {
+    background-color: #CCC;
+    
+    &__top {
+        background-color: #E4E6EB;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        width: 50%;
+        background-color: #E4E6EB;
+    }
+    &__photo {
+        width: 50%;
+    }
+
+    &__h1 {
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    &__h2 {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+
+    &__h3 {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
+    &__p {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 30px;
+    }
+
+    &__list {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 30px 30px;
+        list-style: disc;
+    }
+
+    &__specs {
+        padding: 30px;
+        background-color: #E4E6EB;
+    }
+
+    &__specslist {
+        list-style: square;
+        margin-top: -40px;
+
+        li {
+            font-weight: 200;
+            margin-bottom: 15px;
+            line-height: 30px;
+        }
+    }
+
+    &__slider {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: -2px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+}
