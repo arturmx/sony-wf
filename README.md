@@ -2,4 +2,6 @@
 
 Headphones product page
 
-Html, Css, Sass, JS slider
+Html, Css, Sass, RWD, JS slider
+
+https://arturmx.github.io/sony-wf/
