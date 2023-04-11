@@ -67,7 +67,7 @@ body {
   top: 50%;
   right: 0;
   color: transparent;
-  background-image: url(../assets/right.png);
+  background-image: url(./assets/right.png);
   background-color: transparent;
   border: none;
   width: 50px;
@@ -80,7 +80,7 @@ body {
   top: 50%;
   left: 0;
   color: transparent;
-  background-image: url(../assets/left.png);
+  background-image: url(./assets/left.png);
   background-color: transparent;
   border: none;
   width: 50px;
