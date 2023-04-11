@@ -57,52 +57,63 @@ body {
 
 .container {
   width: 900px;
+  max-width: 100%;
   margin: auto;
   background-color: #FFF;
-}
-@media only screen and (max-width: 900px) {
-  .container {
-    max-width: 100%;
-  }
 }
 
 .slick-next.slick-arrow {
   position: absolute;
   z-index: 9999;
   top: 50%;
-  right: 0;
+  right: 10px;
   color: transparent;
-  background-image: url(./assets/right.png);
-  background-color: transparent;
-  border: none;
-  width: 50px;
-  height: 50px;
-}
-.slick-prev.slick-arrow {
-  position: absolute;
-  z-index: 9999;
-  top: 50%;
-  left: 0;
-  color: transparent;
-  background-image: url(./assets/left.png);
-  background-color: transparent;
+  background-image: url(./assets/arrow.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFF;
+  border-radius: 50%;
   border: none;
   width: 50px;
   height: 50px;
 }
 
-.sony {
-  background-color: #CCC;
+.slick-prev.slick-arrow {
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 10px;
+  color: transparent;
+  background-image: url(./assets/arrow.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFF;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  border: none;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
 }
-.sony__top {
-  background-color: #E4E6EB;
+
+.sony__circle {
+  width: 50px;
+  border: 1px solid #CCC;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  background-color: #FFF;
 }
 .sony__row {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .sony__row {
     flex-direction: column-reverse;
   }
@@ -110,7 +121,7 @@ body {
 .sony__reverse {
   flex-direction: row-reverse;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .sony__reverse {
     flex-direction: column-reverse;
   }
@@ -119,24 +130,29 @@ body {
   width: 50%;
   background-color: #E4E6EB;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   .sony__text {
     width: 100%;
   }
 }
-.sony__photo {
+.sony__photowrapper {
   width: 50%;
 }
-@media only screen and (max-width: 900px) {
-  .sony__photo {
+@media only screen and (max-width: 768px) {
+  .sony__photowrapper {
     width: 100%;
   }
+}
+.sony__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .sony__h1 {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 60px;
   text-align: center;
 }
 .sony__h2 {
@@ -150,7 +166,18 @@ body {
   font-weight: 600;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .sony__h3 {
+    margin-top: 40px;
+  }
+}
+.sony__h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
 }
 .sony__p {
   font-size: 16px;
@@ -165,21 +192,19 @@ body {
 }
 .sony__specs {
   padding: 30px;
-  background-color: #E4E6EB;
 }
 .sony__specslist {
   list-style: square;
-  margin-top: -40px;
 }
 .sony__specslist li {
   font-weight: 200;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   line-height: 30px;
 }
 .sony__slider {
   position: relative;
   overflow: hidden;
-  margin-bottom: -2px;
+  margin-bottom: 30px;
 }
 .sony__slider img {
   object-fit: cover;
